@@ -1,3 +1,5 @@
+DISCLAIMER: The code of `solve.go` is really not good, but it does the trick :) 
+
 At first the $MC([\Delta,0,0,0]), MC([0,\Delta,0,0]), MC([0,0,\Delta,0])$ and $MC([0,0,0,\Delta])$ values are precomputed using an own implementation of the AES-MixColumn function. The 4 byte results are stored in `uint32`.
 
 Then the fault attack repeats for every one of the four columns:
